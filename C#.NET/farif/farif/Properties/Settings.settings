@@ -1,0 +1,82 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="farif.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FileFilter" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;true;.asp&lt;/string&gt;
+  &lt;string&gt;true;.bat&lt;/string&gt;
+  &lt;string&gt;true;.c&lt;/string&gt;
+  &lt;string&gt;true;.cmd&lt;/string&gt;
+  &lt;string&gt;true;.cpp&lt;/string&gt;
+  &lt;string&gt;true;.cs&lt;/string&gt;
+  &lt;string&gt;true;.css&lt;/string&gt;
+  &lt;string&gt;true;.h&lt;/string&gt;
+  &lt;string&gt;true;.hh&lt;/string&gt;
+  &lt;string&gt;true;.hpp&lt;/string&gt;
+  &lt;string&gt;true;.htm&lt;/string&gt;
+  &lt;string&gt;true;.html&lt;/string&gt;
+  &lt;string&gt;true;.ini&lt;/string&gt;
+  &lt;string&gt;true;.kml&lt;/string&gt;
+  &lt;string&gt;true;.mxml&lt;/string&gt;
+  &lt;string&gt;true;.pas&lt;/string&gt;
+  &lt;string&gt;true;.php&lt;/string&gt;
+  &lt;string&gt;true;.php3&lt;/string&gt;
+  &lt;string&gt;true;.php4&lt;/string&gt;
+  &lt;string&gt;true;.php5&lt;/string&gt;
+  &lt;string&gt;true;.phps&lt;/string&gt;
+  &lt;string&gt;true;.phpt&lt;/string&gt;
+  &lt;string&gt;true;.phtml&lt;/string&gt;
+  &lt;string&gt;true;.py&lt;/string&gt;
+  &lt;string&gt;true;.shtml&lt;/string&gt;
+  &lt;string&gt;true;.svg&lt;/string&gt;
+  &lt;string&gt;true;.txt&lt;/string&gt;
+  &lt;string&gt;true;.vb&lt;/string&gt;
+  &lt;string&gt;true;.wsdl&lt;/string&gt;
+  &lt;string&gt;true;.xaml&lt;/string&gt;
+  &lt;string&gt;true;.xhtml&lt;/string&gt;
+  &lt;string&gt;true;.xlf&lt;/string&gt;
+  &lt;string&gt;true;.xml&lt;/string&gt;
+  &lt;string&gt;true;.xs&lt;/string&gt;
+  &lt;string&gt;true;.xsd&lt;/string&gt;
+  &lt;string&gt;true;.xslt&lt;/string&gt;
+  &lt;string&gt;true;.xsml&lt;/string&gt;
+  &lt;string&gt;false;desktop.ini&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="IsIncludeSubFolders" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="IsRepairLfCr" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SelectedLineEnding" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SelectedInputPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="IsRepairLfCrEnabledState" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="IsTryDetectEncoding" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="LastSearchText" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LastReplaceText" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="IsSearchAndReplaceCaseSensitive" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="IsSearchAndReplace" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="OutputIntervall" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
