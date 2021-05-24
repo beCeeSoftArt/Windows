@@ -1,4 +1,4 @@
-# Lidar - contains C# library using Slamtec lidar 
+# Lidar - contains C#/C library for using Slamtec lidar devices
 
 The C# connector for Slamtec RpLidar uses at the base the native lidar driver from sdk and between a C library to communicate with the device.
 
