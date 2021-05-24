@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22B70A09-B22C-493B-9AF1-7F6F4A63F911}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>bcplanet.NATIVE.Adapter.RpLidar</RootNamespace>
+    <AssemblyName>bcplanet.NATIVE.Adapter.RpLidar</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\LibraryOutputDebug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\LibraryOutputRelease\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\CancelationTokenSource.cs" />
+    <Compile Include="Base\ConcurrentHashSet.cs" />
+    <Compile Include="Base\PolarVector.cs" />
+    <Compile Include="Eums\EScanMode.cs" />
+    <Compile Include="EventArguments\LidarDataReceivedEventArgs.cs" />
+    <Compile Include="PInvoke\NativeModuleManager.cs" />
+    <Compile Include="PInvoke\NativeModuleNames.cs" />
+    <Compile Include="RpLidarConnector.cs" />
+    <Compile Include="Structs\RplidarScanMode.cs" />
+    <Compile Include="Structs\rplidar_response_device_health_t.cs" />
+    <Compile Include="Structs\rplidar_response_device_info_t.cs" />
+    <Compile Include="Structs\rplidar_response_measurement_node_hq_t.cs" />
+    <Compile Include="Eums\EDeviceStatus.cs" />
+    <Compile Include="Extensions\RpLidarExtension.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RpLidarInterface.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if not exist "COMMON\" mkdir COMMON\
+if not exist "COMMON\X86\" mkdir COMMON\X86\
+if not exist "COMMON\X64\" mkdir COMMON\X64\
+</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "..\BinariesX86\$(ConfigurationName)\*.dll"  /c /d /h /e /i /y  COMMON\X86\
+xcopy "..\BinariesX64\$(ConfigurationName)\*.dll"  /c /d /h /e /i /y  COMMON\X64\
+
+
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>
