@@ -1,0 +1,8 @@
+USEUNIT("GENERICA_NDOW.cpp");
+USEUNIT("GENERICA_NDOW_F.cpp");
+USELIB("wininet.lib");
+USERES("GENERICA_NDOW.res");
+//---------------------------------------------------------------------------
+Diese Datei wird nur vom Projekt-Manager verwendet und sollte wie die Projektdatei behandelt werden
+
+main
